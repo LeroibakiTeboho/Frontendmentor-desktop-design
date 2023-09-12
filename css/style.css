@@ -1,0 +1,200 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root
+{
+    /* COLORS */
+    --DARKCOLOR: #000;
+    --LIGHTCOLOR: #FFF;
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-container
+{
+    width: 700px;
+    height: fit-content;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 699px)
+{
+        .card-container
+        {
+            justify-content: center;
+        }
+}
+
+.card
+{
+    width: 350px;
+    height: 480px;
+    border-radius: 25px;
+}
+
+.results
+{
+    background: linear-gradient(#6440FC, #312CEA);
+}
+
+.results h3
+{
+    margin: 35px;
+    text-align: center;
+    color: #C9C8FD;
+    font-weight: 550;
+}
+
+.results .circle
+{   
+    background: linear-gradient(#4D22C9,#4835F1);
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results .circle .score h1
+{
+   font-size: 65px;
+   color: #FEFEFE;
+}
+.results .circle .results p
+{
+    text-align: center;
+    color: #8A7DFF;
+    font-weight: 600;
+}
+.results h2
+{
+    margin: 28px 0 18px;
+    font-size: 28px;
+    text-align: center;
+    color: #FEFEFE;
+    font-weight: 545;
+}
+
+.results p
+{
+    text-align: center;
+    color: #b8b0fd;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+
+.summary
+{
+    padding: 35px;
+    font-weight: 550;
+}
+
+.summary h3
+{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.summary .view
+{
+    width: 100%;
+    height: 55px;   
+    border-radius: 7px; 
+    display: flex;
+    justify-content:space-around;
+    gap: 5rem;
+    align-items: center;
+    padding-inline: 20px;
+    font-size: 16px;
+}
+
+.summary .view .label
+{
+    margin-left: 10px;
+}
+
+.summary .view .fraction
+{
+    color: #000;
+}
+
+.icon-label
+{
+    display: flex;
+}
+
+.fate-number
+{
+    color: #7a7a7a;
+}
+
+
+
+.summary .red--view
+{
+    background-color: rgba(201, 85, 87, .15);
+    margin: 20px 0;
+    color: rgb(201, 85, 87);
+}
+
+.summary .yellow--view{
+    background-color: rgba(242, 178, 52, .15);
+    margin: 20px 0;
+    color: rgb(242, 178, 52);
+}
+
+.summary .green--view{
+    background-color: rgba(38, 163, 134, .15);
+    margin: 20px 0;
+    color: rgb(38, 163, 134);
+}
+
+.summary .blue--view{
+    background-color: rgba(37, 46, 138, .15);
+    margin: 20px 0;
+    color: rgb(37, 46, 138);
+}
+
+.summary button
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 53px;
+    border-radius: 25px;
+    border: none;
+    background-color: #303B59;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.summary button:hover,
+.summary button:focus
+{
+    background: linear-gradient(#6643FE, #302CED);
+    transition: all .1s ease;
+}
